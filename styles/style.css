@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-family: cursive;
+  cursor: default;
+}
+body main ul {
+  list-style: none;
+}
+body main ul li {
+  color: rgb(48, 47, 47);
+  cursor: pointer;
+  padding-left: 1rem;
+}
+body main ul li:hover {
+  color: rgb(94, 94, 94);
+}
+body main ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+body main .menu {
+  position: relative;
+}
+body main .menu_item3:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+body main .menu_item3-menu {
+  position: absolute;
+  left: 85px;
+  top: 70px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 250ms ease;
+}
+body main .menu_item3-menu_item4:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+body main .menu_item3-menu_item4-menu {
+  position: absolute;
+  left: 85px;
+  top: 100px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 250ms ease;
+}/*# sourceMappingURL=style.css.map */
